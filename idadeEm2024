@@ -1,0 +1,15 @@
+/******************************************************************************
+Faça um algoritmo que leia dia, mês e ano de nascimento de uma pessoa e informe
+a sua idade no dia 31/12/2024
+*******************************************************************************/
+#include <stdio.h>
+
+void main()
+{
+    int dia,mes,ano,idade;
+    printf("Digite dia, mês e ano de nascimento da pessoa: \n");
+    scanf("%d %d %d",&dia, &mes, &ano);
+    
+    idade = 2024 - ano;
+    printf("A idade da pessoa no dia 31/12/2024 será = %d", idade);
+}
