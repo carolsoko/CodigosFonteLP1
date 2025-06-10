@@ -1,0 +1,14 @@
+//Faça um algoritmo que leia 3 valores inteiros e informe a soma dos dois maiores
+
+#include <stdio.h>
+
+void main() {
+    int a,b,c,soma;
+    
+    printf("Informe 3 números inteiros quaisquer:");
+    scanf("%d %d %d",&a,&b,&c);
+    
+    soma = ((a>c)&&(b>c))?(a+b):(((a>b)&&(c>b))?(a+c):(b+c));
+    
+    printf("Soma = %d",soma);
+}
